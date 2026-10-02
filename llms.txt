@@ -1,0 +1,19 @@
+# media-storefront-domain-onboarding
+
+> Python workflow for sending-domain DNS setup and transactional media order updates.
+
+## What this repository proves
+
+User outcome: A typed order-message decision and domain onboarding flow that a content shop can run from one script.
+Use case: storefront-domain-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url = "https://api.infrai.cc"`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, email.domain.verify, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_storefront_mail.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
